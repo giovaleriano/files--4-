@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste Vocacional — Norteens</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/teste.css">
+</head>
+<body>
+
+  <!--Header-->
+  <header class="header" id="site-header">
+    <div class="container">
+      <!--Logo-->
+      <div class="logo">
+        <a href="index.html" aria-label="Norteens — página inicial" style="display:flex;align-items:center;gap:10px;">
+          <span class="logo-mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="8.5"/>
+              <polygon points="14.3,9.7 12,15 9.7,14.3 12,9" fill="currentColor" stroke="none"/>
+            </svg>
+          </span>
+          <span class="logo-text">Norteens</span>
+        </a>
+      </div>
+
+      <!--Navegação-->
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="index.html#inicio">Início</a>
+        <a href="index.html#numeros">Sobre</a>
+        <a href="index.html#jornada">Métodos</a>
+        <a href="index.html#planos">Planos</a>
+        <a href="index.html#recursos">Materiais</a>
+        <a href="index.html#parceiros">Para escolas</a>
+      </nav>
+
+      <div class="header-buttons">
+        <button class="icon-btn" type="button" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="7"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </button>
+        <a href="#" class="btn-login">Entrar</a>
+        <a href="index.html#planos" class="btn-entrar">Plano grátis</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- INTRO -->
+    <section class="test-hero">
+      <div class="container">
+        <a href="index.html" class="test-back">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          Voltar para o início
+        </a>
+        <span class="badge-eyebrow">Teste vocacional completo</span>
+        <h1 class="reveal">Vamos entender melhor como você pensa e decide.</h1>
+        <p class="reveal">Arraste cada régua para o ponto que mais combina com você. Não existe resposta certa nem errada — quanto mais honesto(a), mais preciso é o resultado.</p>
+      </div>
+    </section>
+
+    <!-- PROGRESSO -->
+    <div class="test-progress-bar">
+      <div class="container test-progress-inner">
+        <div class="test-progress-track">
+          <div class="test-progress-fill" id="test-progress-fill"></div>
+        </div>
+        <span class="test-progress-label"><strong id="test-answered">0</strong>/5 perguntas respondidas</span>
+      </div>
+    </div>
+
+    <!-- PERGUNTAS -->
+    <section class="test-questions">
+      <div class="container">
+
+        <!-- Pergunta 1 -->
+        <article class="test-question reveal">
+          <span class="test-question-dot tq-yellow tq-pos-1"></span>
+          <span class="test-question-dot tq-green tq-pos-2"></span>
+          <span class="test-question-number">Pergunta 1 de 5</span>
+          <h3>Quando um projeto atrasa e ninguém toma a próxima decisão, você tende a…</h3>
+          <div class="test-slider" data-slider data-left-profile="conector" data-right-profile="estrategista">
+            <div class="test-slider-labels">
+              <p>Esperar o grupo chegar a um consenso</p>
+              <p>Assumir o controle e definir o próximo passo</p>
+            </div>
+            <div class="test-slider-track" data-slider-track>
+              <div class="test-slider-fill" data-slider-fill></div>
+              <div class="test-slider-ticks">
+                <span>0</span><span>2</span><span>4</span><span>6</span><span>8</span><span>10</span>
+              </div>
+              <button type="button" class="test-slider-handle" data-slider-handle role="slider" tabindex="0" aria-label="Resposta da pergunta 1" aria-valuemin="0" aria-valuemax="10" aria-valuenow="5">
+                <span class="test-slider-value" data-slider-value>5</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Ilustração entre 1 e 2 -->
+        <div class="test-interstitial align-right reveal">
+          <div class="test-interstitial-visual blob-yellow">
+            <svg viewBox="130 90 190 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustração de uma estudante com notebook">
+              <path d="M148 312c-10-70 26-116 72-116s82 46 72 116z" fill="#f3ece0"/>
+              <circle cx="220" cy="176" r="42" fill="#e6b189"/>
+              <path d="M178 190c-8-46 22-80 42-80s50 34 42 80c-6-22-14-34-14-34s-6 10-28 10-28-10-28-10-8 12-14 34z" fill="#4a2f1e"/>
+              <rect x="176" y="252" width="88" height="58" rx="8" fill="#d99a35"/>
+              <rect x="184" y="240" width="72" height="40" rx="6" fill="#6b7c74"/>
+              <rect x="188" y="244" width="64" height="28" rx="3" fill="#173f35"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <article class="test-question reveal">
+          <span class="test-question-dot tq-orange tq-pos-3"></span>
+          <span class="test-question-dot tq-green tq-pos-1"></span>
+          <span class="test-question-number">Pergunta 2 de 5</span>
+          <h3>Ao receber uma tarefa nova, sua primeira reação é…</h3>
+          <div class="test-slider" data-slider data-left-profile="estrategista" data-right-profile="criativo">
+            <div class="test-slider-labels">
+              <p>Pesquisar, planejar e entender todos os detalhes antes de começar</p>
+              <p>Começar logo e ir ajustando no caminho</p>
+            </div>
+            <div class="test-slider-track" data-slider-track>
+              <div class="test-slider-fill" data-slider-fill></div>
+              <div class="test-slider-ticks">
+                <span>0</span><span>2</span><span>4</span><span>6</span><span>8</span><span>10</span>
+              </div>
+              <button type="button" class="test-slider-handle" data-slider-handle role="slider" tabindex="0" aria-label="Resposta da pergunta 2" aria-valuemin="0" aria-valuemax="10" aria-valuenow="5">
+                <span class="test-slider-value" data-slider-value>5</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Ilustração entre 2 e 3 -->
+        <div class="test-interstitial align-left reveal">
+          <div class="test-interstitial-visual blob-green">
+            <svg viewBox="4 104 190 446" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustração de um estudante com mochila">
+              <rect x="34" y="266" width="92" height="168" rx="26" fill="#14332a"/>
+              <rect x="52" y="432" width="34" height="104" rx="12" fill="#1c2b22"/>
+              <rect x="96" y="432" width="34" height="104" rx="12" fill="#1c2b22"/>
+              <rect x="46" y="520" width="46" height="20" rx="10" fill="#f3ede2"/>
+              <rect x="92" y="520" width="46" height="20" rx="10" fill="#f3ede2"/>
+              <rect x="30" y="232" width="132" height="212" rx="58" fill="#3a6b4d"/>
+              <rect x="14" y="256" width="34" height="110" rx="17" fill="#2f5d43"/>
+              <rect x="144" y="256" width="34" height="110" rx="17" fill="#2f5d43"/>
+              <circle cx="96" cy="182" r="46" fill="#d99a6c"/>
+              <path d="M50 178c-4-40 26-64 46-64s50 24 46 64c-6-14-18-8-18-24 0-14-10-20-28-20s-28 6-28 20c0 16-12 10-18 24z" fill="#241710"/>
+              <circle cx="82" cy="186" r="3.4" fill="#241710"/>
+              <circle cx="110" cy="186" r="3.4" fill="#241710"/>
+              <path d="M86 200q10 8 20 0" stroke="#241710" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <article class="test-question reveal">
+          <span class="test-question-dot tq-green tq-pos-2"></span>
+          <span class="test-question-dot tq-orange tq-pos-1"></span>
+          <span class="test-question-number">Pergunta 3 de 5</span>
+          <h3>Em uma discussão onde você discorda da maioria, você normalmente…</h3>
+          <div class="test-slider" data-slider data-left-profile="conector" data-right-profile="estrategista">
+            <div class="test-slider-labels">
+              <p>Cede para preservar o clima e as relações do grupo</p>
+              <p>Defende seu ponto de vista com dados e argumentos firmes</p>
+            </div>
+            <div class="test-slider-track" data-slider-track>
+              <div class="test-slider-fill" data-slider-fill></div>
+              <div class="test-slider-ticks">
+                <span>0</span><span>2</span><span>4</span><span>6</span><span>8</span><span>10</span>
+              </div>
+              <button type="button" class="test-slider-handle" data-slider-handle role="slider" tabindex="0" aria-label="Resposta da pergunta 3" aria-valuemin="0" aria-valuemax="10" aria-valuenow="5">
+                <span class="test-slider-value" data-slider-value>5</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Ilustração entre 3 e 4 -->
+        <div class="test-interstitial align-right reveal">
+          <div class="test-interstitial-visual blob-yellow">
+            <svg viewBox="0 0 240 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustração de uma estudante com mochila">
+              <rect x="150" y="140" width="66" height="120" rx="20" fill="#173f35"/>
+              <rect x="46" y="230" width="30" height="80" rx="12" fill="#1c2b22"/>
+              <rect x="86" y="230" width="30" height="80" rx="12" fill="#1c2b22"/>
+              <rect x="40" y="300" width="40" height="18" rx="9" fill="#fff"/>
+              <rect x="82" y="300" width="40" height="18" rx="9" fill="#fff"/>
+              <rect x="30" y="130" width="120" height="170" rx="50" fill="#f1b546"/>
+              <circle cx="90" cy="86" r="42" fill="#e6b189"/>
+              <path d="M48 92c-10-46 20-76 42-76s52 30 42 76c-8-24-16-36-16-36s-8 12-26 12-26-12-26-12-8 12-16 36z" fill="#a8462b"/>
+              <path d="M50 84c-8 22 0 40 0 40" stroke="#a8462b" stroke-width="14" fill="none" stroke-linecap="round"/>
+              <path d="M130 84c8 22 0 40 0 40" stroke="#a8462b" stroke-width="14" fill="none" stroke-linecap="round"/>
+              <circle cx="78" cy="90" r="3.2" fill="#2b1c14"/>
+              <circle cx="102" cy="90" r="3.2" fill="#2b1c14"/>
+              <path d="M82 104q8 6 16 0" stroke="#2b1c14" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Pergunta 4 -->
+        <article class="test-question reveal">
+          <span class="test-question-dot tq-orange tq-pos-2"></span>
+          <span class="test-question-dot tq-yellow tq-pos-3"></span>
+          <span class="test-question-number">Pergunta 4 de 5</span>
+          <h3>Para resolver um problema difícil, você prefere…</h3>
+          <div class="test-slider" data-slider data-left-profile="conector" data-right-profile="criativo">
+            <div class="test-slider-labels">
+              <p>Conversar com outras pessoas e ouvir diferentes perspectivas</p>
+              <p>Se isolar um pouco e explorar soluções fora do óbvio</p>
+            </div>
+            <div class="test-slider-track" data-slider-track>
+              <div class="test-slider-fill" data-slider-fill></div>
+              <div class="test-slider-ticks">
+                <span>0</span><span>2</span><span>4</span><span>6</span><span>8</span><span>10</span>
+              </div>
+              <button type="button" class="test-slider-handle" data-slider-handle role="slider" tabindex="0" aria-label="Resposta da pergunta 4" aria-valuemin="0" aria-valuemax="10" aria-valuenow="5">
+                <span class="test-slider-value" data-slider-value>5</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Ilustração entre 4 e 5 -->
+        <div class="test-interstitial align-left reveal">
+          <div class="test-interstitial-visual blob-green">
+            <svg viewBox="296 118 196 432" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustração de um estudante com fones de ouvido">
+              <rect x="356" y="276" width="86" height="158" rx="24" fill="#14332a"/>
+              <rect x="344" y="436" width="34" height="100" rx="12" fill="#241a10"/>
+              <rect x="388" y="436" width="34" height="100" rx="12" fill="#241a10"/>
+              <rect x="338" y="520" width="46" height="20" rx="10" fill="#f3ede2"/>
+              <rect x="384" y="520" width="46" height="20" rx="10" fill="#f3ede2"/>
+              <rect x="322" y="240" width="132" height="212" rx="58" fill="#b5502f"/>
+              <rect x="306" y="264" width="32" height="104" rx="16" fill="#a3462a"/>
+              <rect x="450" y="264" width="32" height="104" rx="16" fill="#a3462a"/>
+              <circle cx="388" cy="192" r="44" fill="#c98a5c"/>
+              <path d="M348 178c0-30 18-46 40-46s40 16 40 46c-4-10-10-16-10-16s-6 8-30 8-30-8-30-8-6 6-10 16z" fill="#1c130c"/>
+              <circle cx="360" cy="176" r="9" fill="#1c130c"/>
+              <path d="M348 168a44 44 0 0 1 80 0" stroke="#173226" stroke-width="6" fill="none" stroke-linecap="round"/>
+              <circle cx="376" cy="198" r="3.2" fill="#1c130c"/>
+              <circle cx="402" cy="198" r="3.2" fill="#1c130c"/>
+              <path d="M380 212q10 7 18 0" stroke="#1c130c" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Pergunta 5 -->
+        <article class="test-question reveal">
+          <span class="test-question-dot tq-yellow tq-pos-1"></span>
+          <span class="test-question-dot tq-orange tq-pos-2"></span>
+          <span class="test-question-number">Pergunta 5 de 5</span>
+          <h3>No seu tempo livre, você prefere…</h3>
+          <div class="test-slider" data-slider data-left-profile="criativo" data-right-profile="conector">
+            <div class="test-slider-labels">
+              <p>Criar, desenhar ou produzir algo sozinho(a)</p>
+              <p>Estar com amigos, organizando algo em grupo</p>
+            </div>
+            <div class="test-slider-track" data-slider-track>
+              <div class="test-slider-fill" data-slider-fill></div>
+              <div class="test-slider-ticks">
+                <span>0</span><span>2</span><span>4</span><span>6</span><span>8</span><span>10</span>
+              </div>
+              <button type="button" class="test-slider-handle" data-slider-handle role="slider" tabindex="0" aria-label="Resposta da pergunta 5" aria-valuemin="0" aria-valuemax="10" aria-valuenow="5">
+                <span class="test-slider-value" data-slider-value>5</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Ilustração final, centralizada -->
+        <div class="test-interstitial align-center reveal">
+          <div class="test-interstitial-visual blob-orange is-wide">
+            <svg viewBox="0 0 460 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustração de três estudantes conversando">
+              <path d="M60 300c-8-56 20-96 62-96s70 40 62 96z" fill="#3a6b4d"/>
+              <circle cx="122" cy="176" r="38" fill="#d99a6c"/>
+              <path d="M86 172c-4-32 20-52 36-52s40 20 36 52c-6-10-14-6-14-20 0-11-8-16-22-16s-22 5-22 16c0 14-8 10-14 20z" fill="#241710"/>
+              <path d="M340 300c8-56-20-96-62-96s-70 40-62 96z" fill="#b5502f"/>
+              <circle cx="278" cy="176" r="36" fill="#c98a5c"/>
+              <path d="M246 168a32 32 0 0 1 64 0" stroke="#173226" stroke-width="6" fill="none" stroke-linecap="round"/>
+              <circle cx="278" cy="150" r="8" fill="#1c130c"/>
+              <path d="M148 312c-10-70 26-116 72-116s82 46 72 116z" fill="#f3ece0"/>
+              <circle cx="220" cy="176" r="42" fill="#e6b189"/>
+              <path d="M178 190c-8-46 22-80 42-80s50 34 42 80c-6-22-14-34-14-34s-6 10-28 10-28-10-28-10-8 12-14 34z" fill="#4a2f1e"/>
+              <rect x="176" y="252" width="88" height="58" rx="8" fill="#d99a35"/>
+              <rect x="184" y="240" width="72" height="40" rx="6" fill="#6b7c74"/>
+              <rect x="188" y="244" width="64" height="28" rx="3" fill="#173f35"/>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ENVIAR -->
+    <section class="test-submit">
+      <div class="container">
+        <button class="btn-primary test-submit-btn" id="test-submit" type="button" disabled>Ver meu resultado</button>
+        <p class="test-submit-hint" id="test-submit-hint">Responda todas as perguntas para ver seu resultado (0/5).</p>
+      </div>
+    </section>
+
+    <!-- RESULTADO -->
+    <section class="test-result" id="test-result" hidden>
+      <div class="container">
+        <div class="test-result-inner">
+          <div class="test-result-top">
+            <span class="badge-eyebrow">Seu resultado</span>
+            <h3 data-result-title>Seu perfil</h3>
+            <p>Nenhum perfil é melhor que o outro — o resultado é só um ponto de partida para você explorar caminhos com mais clareza.</p>
+          </div>
+
+          <div class="test-result-grid">
+            <div class="test-result-bars">
+              <div class="result-bar-row">
+                <div class="result-bar-head"><span>Estrategista</span><span data-result-percent="estrategista">0%</span></div>
+                <div class="result-bar-track"><div class="result-bar-fill estrategista"></div></div>
+              </div>
+              <div class="result-bar-row">
+                <div class="result-bar-head"><span>Criativo</span><span data-result-percent="criativo">0%</span></div>
+                <div class="result-bar-track"><div class="result-bar-fill criativo"></div></div>
+              </div>
+              <div class="result-bar-row">
+                <div class="result-bar-head"><span>Conector</span><span data-result-percent="conector">0%</span></div>
+                <div class="result-bar-track"><div class="result-bar-fill conector"></div></div>
+              </div>
+            </div>
+
+            <div class="test-result-card">
+              <h4 data-result-label>Perfil</h4>
+              <p data-result-desc>Descrição do resultado.</p>
+              <div class="test-result-careers" data-result-careers></div>
+              <div class="test-result-actions">
+                <a href="index.html#profissoes" class="is-primary">Ver profissões combinam <span aria-hidden="true">→</span></a>
+                <a href="index.html#planos" class="is-secondary">Continuar no plano Pro</a>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="test-result-retry" id="test-retry">Refazer o teste</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="newsletter reveal">
+        <div class="newsletter-text">
+          <h4>Receba novidades sobre carreiras e vestibulares</h4>
+          <p>Um e-mail por semana, sem spam. Cancele quando quiser.</p>
+        </div>
+        <form class="newsletter-form" data-newsletter-form>
+          <label for="newsletter-email-teste" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">E-mail</label>
+          <input type="email" id="newsletter-email-teste" placeholder="seu@email.com" required>
+          <button type="submit">Inscrever-se</button>
+          <span class="newsletter-note" data-newsletter-note></span>
+        </form>
+      </div>
+
+      <div class="footer-top">
+        <!-- Descrição -->
+        <div class="footer-description">
+          <div class="footer-logo">
+            <span class="logo-mark">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="8.5"/>
+                <polygon points="14.3,9.7 12,15 9.7,14.3 12,9" fill="currentColor" stroke="none"/>
+              </svg>
+            </span>
+            <span class="footer-logo-text">Norteens</span>
+          </div>
+          <p>
+            Encontre seu caminho começando por você.
+            Orientação de carreira, autoconhecimento
+            e planejamento para cada fase da sua jornada.
+          </p>
+        </div>
+
+        <!-- Navegação -->
+        <div class="footer-links">
+          <div class="footer-column">
+            <h5>Plataforma</h5>
+            <a href="index.html#inicio">Início</a>
+            <a href="teste.html">Teste Vocacional</a>
+            <a href="index.html#profissoes">Profissões</a>
+            <a href="index.html#planos">Planos</a>
+          </div>
+
+          <div class="footer-column">
+            <h5>Recursos</h5>
+            <a href="index.html#recursos">Materiais</a>
+            <a href="index.html#recursos">Mentorias</a>
+            <a href="comunidade.html">Comunidade</a>
+            <a href="index.html#recursos">Blog</a>
+          </div>
+
+          <div class="footer-column">
+            <h5>Empresa</h5>
+            <a href="index.html#numeros">Sobre</a>
+            <a href="index.html#parceiros">Parceiros</a>
+            <a href="index.html#parceiros">Escolas</a>
+            <a href="index.html#faq">Contato</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Norteens. Todos os direitos reservados.</span>
+
+        <div class="socials">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M14 3c.3 2.4 1.9 4 4.5 4.2v2.6c-1.6 0-3-.5-4.2-1.4v6.4c0 3-2.4 5.4-5.4 5.4S3.5 17.8 3.5 14.8 5.9 9.4 8.9 9.4c.4 0 .8 0 1.1.1v2.7c-.3-.1-.7-.2-1.1-.2-1.6 0-2.9 1.3-2.9 2.9s1.3 2.9 2.9 2.9 2.9-1.3 2.9-2.9V3H14z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2.5" y="5.5" width="19" height="13" rx="4"/>
+              <path d="M10.5 9.3v5.4l4.8-2.7-4.8-2.7z" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M6.94 8.5H3.56V20h3.38V8.5zM5.25 3.5a1.96 1.96 0 1 0 0 3.92 1.96 1.96 0 0 0 0-3.92zM20.5 20h-3.37v-5.9c0-1.4-.03-3.2-1.95-3.2-1.96 0-2.26 1.53-2.26 3.1V20H9.55V8.5h3.24v1.57h.05c.45-.85 1.56-1.75 3.2-1.75 3.43 0 4.46 2.26 4.46 5.2V20z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão voltar ao topo -->
+  <button class="back-to-top" type="button" id="back-to-top" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script src="js/teste.js"></script>
+</body>
+</html>

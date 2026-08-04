@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profissão — Norteens</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/profissao.css">
+</head>
+<body>
+
+  <!--Header-->
+  <header class="header" id="site-header">
+    <div class="container">
+      <!--Logo-->
+      <div class="logo">
+        <a href="index.html" aria-label="Norteens — página inicial" style="display:flex;align-items:center;gap:10px;">
+          <span class="logo-mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="8.5"/>
+              <polygon points="14.3,9.7 12,15 9.7,14.3 12,9" fill="currentColor" stroke="none"/>
+            </svg>
+          </span>
+          <span class="logo-text">Norteens</span>
+        </a>
+      </div>
+
+      <!--Navegação-->
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="index.html#inicio">Início</a>
+        <a href="index.html#numeros">Sobre</a>
+        <a href="index.html#jornada">Métodos</a>
+        <a href="index.html#planos">Planos</a>
+        <a href="index.html#recursos">Materiais</a>
+        <a href="index.html#parceiros">Para escolas</a>
+      </nav>
+
+      <div class="header-buttons">
+        <button class="icon-btn" type="button" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="7"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </button>
+        <a href="#" class="btn-login">Entrar</a>
+        <a href="index.html#planos" class="btn-entrar">Plano grátis</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="prof-hero">
+      <div class="container">
+        <a href="index.html#profissoes" class="back-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          Voltar para o guia de profissões
+        </a>
+        <div class="prof-hero-top reveal">
+          <span class="career-tag" id="prof-tag">Categoria</span>
+          <h1 id="prof-title">Profissão</h1>
+          <p class="lead">Descubra a rotina, a formação, o salário médio e as habilidades que fazem diferença nessa carreira.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA EM MOSAICO -->
+    <section class="prof-gallery">
+      <div class="container">
+        <div class="gallery-grid reveal-stagger" id="gallery-grid"></div>
+      </div>
+    </section>
+
+    <!-- INFORMAÇÕES -->
+    <section class="prof-info">
+      <div class="info-grid reveal-stagger" id="info-grid"></div>
+    </section>
+
+    <!-- TROCAR DE PROFISSÃO -->
+    <section class="prof-switch">
+      <div class="section-title reveal">
+        <h3>Quer ver <span class="text-orange">outras áreas?</span></h3>
+      </div>
+      <div class="switch-pills reveal" id="switch-pills"></div>
+    </section>
+
+    <!-- CTA -->
+    <section class="prof-cta">
+      <div class="container">
+        <div class="prof-cta-box reveal">
+          <h2>Curioso(a) para saber se essa área combina com você?</h2>
+          <p>Faça o teste vocacional completo e descubra seu perfil em poucos minutos.</p>
+          <a href="teste.html" class="btn-primary">Fazer teste gratuito <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="newsletter reveal">
+        <div class="newsletter-text">
+          <h4>Receba novidades sobre carreiras e vestibulares</h4>
+          <p>Um e-mail por semana, sem spam. Cancele quando quiser.</p>
+        </div>
+        <form class="newsletter-form" data-newsletter-form>
+          <label for="newsletter-email-prof" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">E-mail</label>
+          <input type="email" id="newsletter-email-prof" placeholder="seu@email.com" required>
+          <button type="submit">Inscrever-se</button>
+          <span class="newsletter-note" data-newsletter-note></span>
+        </form>
+      </div>
+
+      <div class="footer-top">
+        <!-- Descrição -->
+        <div class="footer-description">
+          <div class="footer-logo">
+            <span class="logo-mark">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="8.5"/>
+                <polygon points="14.3,9.7 12,15 9.7,14.3 12,9" fill="currentColor" stroke="none"/>
+              </svg>
+            </span>
+            <span class="footer-logo-text">Norteens</span>
+          </div>
+          <p>
+            Encontre seu caminho começando por você.
+            Orientação de carreira, autoconhecimento
+            e planejamento para cada fase da sua jornada.
+          </p>
+        </div>
+
+        <!-- Navegação -->
+        <div class="footer-links">
+          <div class="footer-column">
+            <h5>Plataforma</h5>
+            <a href="index.html#inicio">Início</a>
+            <a href="teste.html">Teste Vocacional</a>
+            <a href="index.html#profissoes">Profissões</a>
+            <a href="index.html#planos">Planos</a>
+          </div>
+
+          <div class="footer-column">
+            <h5>Recursos</h5>
+            <a href="index.html#recursos">Materiais</a>
+            <a href="index.html#recursos">Mentorias</a>
+            <a href="comunidade.html">Comunidade</a>
+            <a href="index.html#recursos">Blog</a>
+          </div>
+
+          <div class="footer-column">
+            <h5>Empresa</h5>
+            <a href="index.html#numeros">Sobre</a>
+            <a href="index.html#parceiros">Parceiros</a>
+            <a href="index.html#parceiros">Escolas</a>
+            <a href="index.html#faq">Contato</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Norteens. Todos os direitos reservados.</span>
+
+        <div class="socials">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M14 3c.3 2.4 1.9 4 4.5 4.2v2.6c-1.6 0-3-.5-4.2-1.4v6.4c0 3-2.4 5.4-5.4 5.4S3.5 17.8 3.5 14.8 5.9 9.4 8.9 9.4c.4 0 .8 0 1.1.1v2.7c-.3-.1-.7-.2-1.1-.2-1.6 0-2.9 1.3-2.9 2.9s1.3 2.9 2.9 2.9 2.9-1.3 2.9-2.9V3H14z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2.5" y="5.5" width="19" height="13" rx="4"/>
+              <path d="M10.5 9.3v5.4l4.8-2.7-4.8-2.7z" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M6.94 8.5H3.56V20h3.38V8.5zM5.25 3.5a1.96 1.96 0 1 0 0 3.92 1.96 1.96 0 0 0 0-3.92zM20.5 20h-3.37v-5.9c0-1.4-.03-3.2-1.95-3.2-1.96 0-2.26 1.53-2.26 3.1V20H9.55V8.5h3.24v1.57h.05c.45-.85 1.56-1.75 3.2-1.75 3.43 0 4.46 2.26 4.46 5.2V20z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão voltar ao topo -->
+  <button class="back-to-top" type="button" id="back-to-top" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script src="js/professions-data.js"></script>
+  <script src="js/profissao.js"></script>
+</body>
+</html>
